@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskList</title>
+</head>
+<body>
+<table>
+    {% if request.user.is_authenticated %}
+    <p>{{request.user}}</p>
+    <a href="{% url 'logout' %}">Logout</a>
+    <hr>
+    {% else %}
+    <a href="{% url 'login' %}">Login</a>
+    {% endif %}
+
+    
+    <th>Todos</th>
+    <th><a href="{% url 'task-create' %}">Add Task</a></th>
+    {% for list in tasklist %}
+    <tr>
+    <td> {{list}} </td>
+    <td><a href="{% url 'task' list.id %}"><button>View</button></a></td>
+    <td><a href="{% url 'task-update' list.id %}"><button>Update</button></a></td>
+    <td><a href="{% url 'task-Delete' list.id %}"><button>Delete</button></a></td>
+
+    </tr>
+    
+
+    {% empty %}
+
+    {% endfor %}
+</table>
+</body>
+</html>
