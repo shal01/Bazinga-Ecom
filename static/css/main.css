@@ -1,0 +1,131 @@
+body{
+	background-color: hsl(0, 0%, 98%);
+}
+
+h1,h2,h3,h4,h5,h6{
+	color:hsl(0, 0%, 30%);
+}
+
+.box-element{
+	box-shadow:hsl(0, 7%, 38%) 0 0 16px;
+	background-color: #fff;
+	border-radius: 4px;
+	padding: 10px;
+    transition: box-shadow 0.3s, background-color 0.3s, transform 0.3s;
+}
+
+.box-element:hover {
+    box-shadow: hsl(210, 70%, 50%) 0 0 16px; 
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+  }
+
+.thumbnail{
+	width: 100%;
+	height: 200px;
+	-webkit-box-shadow: -1px -3px 5px -2px rgba(214,214,214,1);
+    -moz-box-shadow: -1px -3px 5px -2px rgba(214,214,214,1);
+    box-shadow: -1px -3px 5px -2px rgba(214,214,214,1);
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.thumbnail:hover {
+    box-shadow: 0px 0px 10px 0px rgba(214, 214, 214, 1); /* Changing box-shadow on hover */
+    transform: scale(1.02); /* Scaling slightly on hover */
+  }
+  
+
+.product{
+	border-radius: 0 0 4px 4px;
+}
+
+.bg-dark{
+	background-color: #4f868c!important;
+}
+
+
+
+#cart{
+    display: flex;
+}
+
+#cart-icon{
+	width:25px;
+	display: inline-blockre;
+	margin-left: 15px;
+    position: relative;
+}
+
+
+#cart-total{
+	display: block;
+	text-align: center;
+    position: absolute;
+	color:#fff;
+	background-color: red;
+	width: 20px;
+	height: 25px;
+	border-radius: 50%;
+	font-size: 14px;
+    transform:translate(50%,-45%)
+}
+
+.col-lg-4, .col-lg-6, .col-lg-8, .col-lg-12{
+	margin-top: 10px;
+}
+
+.btn{
+	border-radius: 0;
+}
+
+.row-image{
+	width: 100px;
+}
+
+.form-field{
+	width:250px;
+	display: inline-block;
+	padding: 5px;
+}
+
+.cart-row{
+	display: flex;
+    align-items: flex-stretch;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ececec;
+
+}
+
+.quantity{
+	display: inline-block;
+	font-weight: 700;
+	padding-right:10px;
+	
+
+}
+
+.chg-quantity{
+	width: 12px;
+	cursor: pointer;
+	display: block;
+	margin-top: 5px;
+	transition:.1s;
+}
+
+.chg-quantity:hover{
+	opacity: .6;
+}
+
+
+.hidden{
+	display: none!important;
+}
+
+#rowdata{
+    margin-top: 2%;
+}
+
+#rowdata1{
+    margin-top: 10%;
+}
