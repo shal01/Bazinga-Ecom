@@ -31,7 +31,7 @@ h1,h2,h3,h4,h5,h6{
 
 .thumbnail:hover {
     box-shadow: 0px 0px 10px 0px rgba(214, 214, 214, 1); /* Changing box-shadow on hover */
-    transform: scale(1.02); /* Scaling slightly on hover */
+    transform: scale(1.12); /* Scaling slightly on hover */
   }
   
 
@@ -124,12 +124,16 @@ h1,h2,h3,h4,h5,h6{
 
 #rowdata{
     margin-top: 2%;
-    margin-bottom: 10%;
+    margin-bottom: 2%;
 }
 
 #rowdata1{
     margin-top: 10%;
     
+}
+
+#rowdata2{
+  margin-top: 2%;
 }
 
 
