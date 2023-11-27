@@ -52,10 +52,26 @@ h1,h2,h3,h4,h5,h6{
 #cart-icon{
 	width:25px;
 	display: inline-blockre;
-	margin-left: 15px;
+	margin-left: 0px;
+  color: white;
   position: relative;
 }
 
+#cart-icon:hover{
+  color: #ff4d07; 
+  transform: scale(1.25); 
+  transition: color 0.3s ease-out, transform 0.3s ease-out;
+}
+
+.carticon{
+  text-decoration: none;
+}
+
+.carticon:hover{
+  color: #ff4d07; 
+  transform: scale(1.25); 
+  transition: color 0.3s ease-out, transform 0.3s ease-out;
+}
 
 #cart-total{
 	display: block;
@@ -67,7 +83,7 @@ h1,h2,h3,h4,h5,h6{
 	height: 25px;
 	border-radius: 50%;
 	font-size: 14px;
-  transform:translate(50%,-45%)
+  transform:translate(428%,-44%)
 }
 
 .col-lg-4, .col-lg-6, .col-lg-8, .col-lg-12{
@@ -143,7 +159,7 @@ h1,h2,h3,h4,h5,h6{
   }
   
   .brand-small {
-    font-size: 1.2em; /* Slightly larger font size for 'Store' */
+    font-size: 1.7rem; /* Slightly larger font size for 'Store' */
   }
   
   /* Navbar brand hover effect */
@@ -153,8 +169,8 @@ h1,h2,h3,h4,h5,h6{
   }
   
   .brand-small:hover  {
-    color: #ff4d07; /* Change text color on hover */
-    transform: scale(1.05); /* Increase size on hover */
+    color: #ff4d07; 
+    transform: scale(1.05); 
     transition: color 0.3s ease-out, transform 0.3s ease-out; 
   }
   
@@ -186,3 +202,7 @@ h1,h2,h3,h4,h5,h6{
   transform: scale(1.1); 
 }
 
+#loginbtn{
+  width: 120px;
+  font-weight: 400;
+}
