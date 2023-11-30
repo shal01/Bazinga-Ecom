@@ -1,4 +1,5 @@
 {% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,10 +31,35 @@
 
       var csrftoken = getToken('csrftoken');
 
+
+      function getCookie(name){
+        let cookieArr = document.cookie.split(";");
+        for(let i=0; i<cookieArr.length; i++){
+          let cookiePair = cookieArr[i].split("=");
+
+          if(name == cookiePair[0].trim()){
+            return decodeURIComponent(cookiePair[1]);
+          }
+
+        }
+        return null;
+      }
+
+      let cart = JSON.parse(getCookie('cart'))
+      if (cart === undefined || cart === null) {
+        cart = {};
+        console.log('Cart Created!');
+        document.cookie = 'cart=' + JSON.stringify(cart) + ";domain=;path=/";
+      }
+      console.log('cart:',cart)
+
+
+
+
     </script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-topur happ">
         <div class="container-fluid">
           <a class="navbar-brand" href="{% url 'store' %}"><span class="brand-large">Bazinga!</span></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
